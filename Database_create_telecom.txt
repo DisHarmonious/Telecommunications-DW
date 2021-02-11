@@ -1,0 +1,53 @@
+CREATE DATABASE telecom;
+
+USE telecom;
+
+CREATE TABLE phone_calls(
+	call_id varchar(255) NOT NULL,
+	caller_id varchar(255) NOT NULL,
+	receiver_id varchar(255) NOT NULL,
+	real_duration float(24),
+	geo_x_caller float(24),
+	geo_y_caller float(24),
+	timestamp date,
+	PRIMARY KEY (call_id)
+	);
+
+CREATE TABLE users(
+	user_id varchar(255) NOT NULL,
+	name varchar(255),
+	adress varchar(255),
+	phone_number varchar(255),
+	sub_date date,
+	employee varchar(255),
+	billing_packet int(5),
+	PRIMARY KEY (user_id)
+	);
+
+
+CREATE TABLE employees(
+	employee_id varchar(255) NOT NULL,
+	name varchar(255),
+	adress varchar(255),
+	email varchar(255),
+	phone_number varchar(255),
+	company int NOT NULL,
+	PRIMARY KEY (employee_id)
+	);
+
+CREATE TABLE finances(
+	user_id varchar(255) NOT NULL,
+	amount int,
+	packet int,
+	employee_id varchar(255),
+	company int,
+	year int,
+	month int
+	);
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+TELECOMMUNICATIONS PROJECT VERBOSE
+
+Structure:
+-there are 3 telecommunication provider companies (lion, hawk, bear) in Switzerland
+-each company has between 20 and 50 marketers/employees responsible for fetching new clients
+-each marketer can provide to the users/clients a billing packet, concerning phone calls
+*note: lion marketers provide packets {1,2,3}, hawk marketers provide packets {2,3,4}, and bear marketers provide packets {3,4,5}*
+-each marketer has recruited between 20 and 100 users from January 1st 2017 to May 31st 2017
+-each user generates up to 20 phone calls a month, starting June 1st 2017
+-(most) packets take into account if the phone call is international or domestic (using geospatial coordinates) and its duration
+
+Goals:
+-create a data warehouse to manage the historical data (up to December 31st 2020) and new data
+-answer queries
+
+Queries:
+-find profit, for each company, for each month
+-find for each company the best marketer (based on his users' total  monthly profit generated) to reward him
+-find highest spenders for each company
+-find least profitable packet to discontinue it
+
+
